@@ -1,15 +1,16 @@
 {
   "name": "sample",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"commit": "commit"
+    "commit": "commit",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devansvd/sample.git"
+    "url": "https://github.com/devansvd/sample.git"
   },
   "author": "Devan <vanthi.svd@gmail.com>",
   "license": "ISC",
@@ -17,7 +18,7 @@
     "url": "https://github.com/devansvd/sample/issues"
   },
   "homepage": "https://github.com/devansvd/sample#readme",
- "husky": {
+  "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
@@ -26,6 +27,10 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt-cli": "^8.3.5",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "semantic-release": "^17.0.7"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
